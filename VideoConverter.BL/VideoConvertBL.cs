@@ -26,6 +26,9 @@ namespace VideoConverter.BL
             hdResolution = configuration.GetValue<string>("AppConfiguration:HdResolution");
         }
 
+
+        // This function should be implemented as an async function while user get notification (signalR logic) 
+        // when everything is done and video can be played
         public Video UploadFile(IFormFile file)
         {
             try
